@@ -5,6 +5,7 @@ import "fmt"
 func prime(number int) {
 	Prime := true
 	if number == 0 || number == 1 {
+		fmt.Println(" Zero and 1 are not considered prime numbers.") // https://bit.ly/2x9DrUa
 		fmt.Printf(" %d is not a  prime number\n", number)
 	} else {
 		for i := 2; i <= number/2; i++ { // Sieve of Eratosthenes Algorithm
